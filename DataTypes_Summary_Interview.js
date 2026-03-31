@@ -60,4 +60,52 @@ let myFun = function(params) {
     console.log("My Function");
 }
 
+console.log("-----------------------------------------------------------------");
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+/* 
+    Memory in JS
+        Stack and Heap
+
+        Stack: Primitive DT
+        Heap: Non Primitive DT
+*/
+
+let myName = "Shobhit";
+let myAnotherName = myName;
+myAnotherName = "Shudhanshu";
+
+console.log(myName);
+console.log(myAnotherName);
+
+/*
+Primitive DT ko stack memory allocate hoti hai and is mai original value ka reference nhi value ko copy kr k assign kra jata hai.
+
+So copy ka value change hone k baad bhi original value change nhi hoti
+*/
+
+
+let userOne = {
+    email: "my@email.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "user@email.com"
+
+console.log(userOne);
+console.log(userTwo);
+
+/*
+Non Primitive DT ko Heap memory allocate hoti hai and is mai original value ka reference milta hai
+
+So if kuch change hota hai then original value mai change hota hai.
+*/
+
+
+
+
+
 
