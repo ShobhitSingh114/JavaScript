@@ -10,6 +10,12 @@ let name = "Shobhit"    // string
 let age = 19            // number
 let isLoggedIn = false  // boolean
 
+let id = Symbol('123');
+let anotherId = Symbol('123');
+console.log("Comparing two symbols");
+console.log(id === anotherId); // false
+
+
 
 // number => upto 2^53
 // bigint => value which is greater than 2^53 e.g. stock trading, stock market, reddit, fackbook
