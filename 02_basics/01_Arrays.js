@@ -85,5 +85,6 @@ const myNewArr2 = myArr.splice(1,3);
 console.log("Spliced Array", myNewArr2);
 console.log("C ", myArr);
 
+console.log("---------------------------------------------------------------------------");
 
 
