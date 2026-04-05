@@ -62,5 +62,24 @@ console.log(Object.keys(tinderUser));   // gives array of the keys of tinderUser
 console.log(Object.values(tinderUser));   // gives array of the values of tinderUser object
 console.log(Object.entries(tinderUser));    // gives an array of arrays consisting keys and value 
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));   // true
+console.log(tinderUser.hasOwnProperty('isLoggedIn'));   // true 
+
+
+console.log("------------------ Object De-Structure ---------------------");
+
+
+const course = {
+    coursename : "JS in hindi",
+    price : "999",
+    courseInstructor : "shobhit"
+}
+
+// course.courseInstructor  // typical syntax
+
+const {courseInstructor} = course
+console.log(courseInstructor);
+
+// we can also give our name
+const {courseInstructor: instructor} = course
+console.log(instructor);
 
